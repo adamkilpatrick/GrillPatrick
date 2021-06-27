@@ -1,0 +1,19 @@
+groups:
+- name: TempDiff
+  rules:
+  - alert: TempHigh
+    expr: targetTempGauge - temperatureGauge < -50
+    for: 5m
+    annotations:
+      title: 'Temp High'
+      description: 'temp too high'
+    labels:
+      severity: 'critical'
+  - alert: TempLow
+    expr: targetTempGauge - temperatureGauge > 50
+    for: 5m
+    annotations:
+      title: 'Temp Low'
+      description: 'temp too low'
+    labels:
+      severity: 'critical'

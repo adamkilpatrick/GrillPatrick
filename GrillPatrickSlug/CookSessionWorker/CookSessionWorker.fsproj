@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>dotnet-CookSessionWorker-F557691E-7FF6-4B0B-A8B0-7B6AAE67A5A7</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  
+  <ItemGroup>
+    <Compile Include="SessionRunner.fs" />
+    <Compile Include="Worker.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  
+  <ItemGroup>
+    <None Include="Dockerfile" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Fsharp.Json" Version="0.4.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.14" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="serilog" Version="2.10.0" />
+    <PackageReference Include="serilog.extensions.hosting" Version="4.1.2" />
+    <PackageReference Include="serilog.sinks.console" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CookSessionServiceModel\CookSessionServiceModel.fsproj" />
+    <ProjectReference Include="..\PidServiceModel\PidServiceModel.fsproj" />
+    <ProjectReference Include="..\SensorServiceModel\SensorServiceModel.fsproj" />
+  </ItemGroup>
+</Project>

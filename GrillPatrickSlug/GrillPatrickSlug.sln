@@ -1,0 +1,87 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "PidService", "PidService\PidService.fsproj", "{2DD75EFB-E5E2-4FCE-A011-B99BCEE9E1D3}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "SensorService", "SensorService\SensorService.fsproj", "{E8A3018F-3259-408A-9E91-9BE4C755A4DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Compose", "Compose", "{5B23A40B-7BF8-4201-B757-84E472837AEA}"
+	ProjectSection(SolutionItems) = preProject
+		Compose\docker-compose.yml = Compose\docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "SensorServiceModel", "SensorServiceModel\SensorServiceModel.fsproj", "{3B790CE6-33CD-4F1E-B04E-D812381485DF}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "SensorServiceTests", "SensorServiceTests\SensorServiceTests.fsproj", "{FEDA5E33-782D-4AAD-9F0B-0C59E4BFCEDD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Prometheus", "Prometheus", "{F98793BA-4159-4742-9A72-8B23FFD8798B}"
+	ProjectSection(SolutionItems) = preProject
+		Compose\Prometheus\prometheus.yml = Compose\Prometheus\prometheus.yml
+		Compose\Prometheus\rules.yml = Compose\Prometheus\rules.yml
+	EndProjectSection
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "PidServiceModel", "PidServiceModel\PidServiceModel.fsproj", "{2ABEE63A-4C37-4639-B3AC-CAC71BE5869F}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "CookSessionWorker", "CookSessionWorker\CookSessionWorker.fsproj", "{CE79B6EC-1DFE-44D3-B306-43AB423F8E60}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "FanController", "FanController\FanController.fsproj", "{B3A9FE60-9086-4066-A1D0-EA3AB89F13F2}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "CookSessionServiceModel", "CookSessionServiceModel\CookSessionServiceModel.fsproj", "{59818A54-3C99-41B0-A8D4-A8B845ABCBDE}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "CookSessionService", "CookSessionService\CookSessionService.fsproj", "{4F9935B0-2669-403B-8640-2CE236D06FB3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2DD75EFB-E5E2-4FCE-A011-B99BCEE9E1D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DD75EFB-E5E2-4FCE-A011-B99BCEE9E1D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DD75EFB-E5E2-4FCE-A011-B99BCEE9E1D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DD75EFB-E5E2-4FCE-A011-B99BCEE9E1D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8A3018F-3259-408A-9E91-9BE4C755A4DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8A3018F-3259-408A-9E91-9BE4C755A4DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8A3018F-3259-408A-9E91-9BE4C755A4DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8A3018F-3259-408A-9E91-9BE4C755A4DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B790CE6-33CD-4F1E-B04E-D812381485DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B790CE6-33CD-4F1E-B04E-D812381485DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B790CE6-33CD-4F1E-B04E-D812381485DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B790CE6-33CD-4F1E-B04E-D812381485DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEDA5E33-782D-4AAD-9F0B-0C59E4BFCEDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEDA5E33-782D-4AAD-9F0B-0C59E4BFCEDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEDA5E33-782D-4AAD-9F0B-0C59E4BFCEDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEDA5E33-782D-4AAD-9F0B-0C59E4BFCEDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ABEE63A-4C37-4639-B3AC-CAC71BE5869F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ABEE63A-4C37-4639-B3AC-CAC71BE5869F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ABEE63A-4C37-4639-B3AC-CAC71BE5869F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ABEE63A-4C37-4639-B3AC-CAC71BE5869F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE79B6EC-1DFE-44D3-B306-43AB423F8E60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE79B6EC-1DFE-44D3-B306-43AB423F8E60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE79B6EC-1DFE-44D3-B306-43AB423F8E60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE79B6EC-1DFE-44D3-B306-43AB423F8E60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3A9FE60-9086-4066-A1D0-EA3AB89F13F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3A9FE60-9086-4066-A1D0-EA3AB89F13F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3A9FE60-9086-4066-A1D0-EA3AB89F13F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3A9FE60-9086-4066-A1D0-EA3AB89F13F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59818A54-3C99-41B0-A8D4-A8B845ABCBDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59818A54-3C99-41B0-A8D4-A8B845ABCBDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59818A54-3C99-41B0-A8D4-A8B845ABCBDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59818A54-3C99-41B0-A8D4-A8B845ABCBDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F9935B0-2669-403B-8640-2CE236D06FB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F9935B0-2669-403B-8640-2CE236D06FB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F9935B0-2669-403B-8640-2CE236D06FB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F9935B0-2669-403B-8640-2CE236D06FB3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F98793BA-4159-4742-9A72-8B23FFD8798B} = {5B23A40B-7BF8-4201-B757-84E472837AEA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9BC08113-9C4E-4AFB-A6D8-2F1ECABC4816}
+	EndGlobalSection
+EndGlobal
